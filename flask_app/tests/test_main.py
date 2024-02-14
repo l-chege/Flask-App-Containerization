@@ -6,7 +6,7 @@ class FlaskTest(unittest.TestCase):
         tester = app.test_client(self)
         response = tester.get("/")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data, b'Hello, flask app dockerization!')
+        self.assertEqual(response.data, b"Hello, flask app dockerization!")
 
 if __name__ == "__main__":
     unittest.main()
