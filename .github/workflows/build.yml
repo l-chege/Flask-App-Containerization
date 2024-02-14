@@ -26,5 +26,16 @@ jobs:
             - name: Build and run Docker container
               run: |
                 docker build -t flask-app:latest .
-                docker
+                docker run -d -p 5000:80 flask-app:latest
+
+            - name: Run tests
+              run: |
+                python -m unittest discover -s flask_app/tests
+
+            - name: Stop and remove Docker container
+              run: |
+                docker stop flask-container
+                docker rm flask-container
+
+              
                 

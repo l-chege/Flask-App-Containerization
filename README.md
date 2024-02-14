@@ -1,4 +1,4 @@
-# Orchestrating CI/CD Pipelines through Dockerization of a Flask App 
+# Orchestrating CI/CD through Dockerization of a Flask App 
 
 Project features:
 - Highlights basic flask features such as creation of Docker images and deployment to a Docker registry.
