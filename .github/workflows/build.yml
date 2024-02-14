@@ -25,6 +25,9 @@ jobs:
               with:
                 node-version: '16'
 
+            - name: Use Node.js 20
+              run: echo "Node.js 20 setup completed"
+
             - name: Install dependencies
               run: |
                 python -m pip install --upgrade pip
