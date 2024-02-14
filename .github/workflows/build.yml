@@ -25,14 +25,14 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r flask_app/requirements.txt
 
+            - name: Run tests
+              run: |
+                python -m unittest discover -s flask_app/tests
+
             - name: Build and run Docker container
               run: |
                 docker build -t flask-app .
                 docker -d -p 5000:80 --name flask-container flask-app 
-
-            - name: Run tests
-              run: |
-                python -m unittest discover -s flask_app/tests
 
             - name: Stop and remove Docker container
               run: |
