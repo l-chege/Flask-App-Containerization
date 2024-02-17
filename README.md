@@ -1,4 +1,4 @@
-# Orchestrating CI/CD through Dockerization of a Flask App 
+# CI Implementation by Dockerizing a Python Flask Application 
 
 Project features:
 - Highlights basic flask features such as creation of Docker images and deployment to a Docker registry.
